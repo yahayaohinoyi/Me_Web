@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DSC</string>
+    <string name="question1">If the interest on N150.00 for 2.5years is N4.5,find the interest on
+    N250.00 for 6months at the same rate.</string>
+    <string name="question2">The cost of renovating a 6m square room is N540.What
+    is the cost of renovating a 9m square room</string>
+</resources>
