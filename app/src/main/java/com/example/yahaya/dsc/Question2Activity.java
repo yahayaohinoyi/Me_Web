@@ -27,8 +27,13 @@ public class Question2Activity extends AppCompatActivity {
                 startActivity(gotoq_3);
             }
         });
-
-
+        Button prevbtn1=(Button)findViewById(R.id.button3);
+        prevbtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2=new Intent(Question2Activity.this,MainActivity.class);
+            }
+        });
     }
     public void onRadioButtonClicked2(View view){
         boolean checked=((RadioButton) view).isChecked();

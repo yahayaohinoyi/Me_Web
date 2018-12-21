@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         TextView Q_1=(TextView)findViewById(R.id.textView);
         String string=getString(R.string.question1);
         Q_1.setText(string);
+        Intent getintent=getIntent();
     }
 
     public void onRadioButtonClicked(View view){
