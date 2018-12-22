@@ -32,6 +32,7 @@ public class Question2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2=new Intent(Question2Activity.this,MainActivity.class);
+                startActivity(intent2);
             }
         });
     }
