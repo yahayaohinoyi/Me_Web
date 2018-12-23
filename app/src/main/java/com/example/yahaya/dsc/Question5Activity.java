@@ -7,29 +7,35 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class Question4Activity extends AppCompatActivity {
+public class Question5Activity extends AppCompatActivity {
 static int score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question4);
-        TextView tv=(TextView)findViewById(R.id.textView3);
-        String Q_4=getString(R.string.question4);
-        tv.setText(Q_4);
+        setContentView(R.layout.activity_question5);
         Intent getintent=getIntent();
-        score=getintent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
-        Button prevbtn=(Button)findViewById(R.id.button7);
+        getintent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
+        TextView tv=(TextView)findViewById(R.id.textView5);
+        String Q_5=getString(R.string.question5);
+        tv.setText(Q_5);
+        Button prevbtn=(Button)findViewById(R.id.button8);
         prevbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        Button nextbtn=(Button)findViewById(R.id.button9);
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });
+
     }
-    public void onRadioButtonClicked4(View view){
+    public void onRadioButtonClicked5(View view){
         boolean checked=((RadioButton) view).isChecked();
         switch(view.getId()){
             case R.id.option1:
@@ -42,7 +48,7 @@ static int score;
                 }
             case R.id.option3:
                 if(checked){
-                 score++;
+                    score++;
                 }
             case R.id.option4:
                 if(checked){

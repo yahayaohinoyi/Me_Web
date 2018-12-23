@@ -26,25 +26,32 @@
             android:id="@+id/radbtn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="32%" />
+            android:text="32%"
+            android:onClick="onRadioButtonClicked3"/>
 
         <RadioButton
             android:id="@+id/radbtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20%" />
+            android:text="20%"
+            android:onClick="onRadioButtonClicked3"/>
+        />
 
         <RadioButton
             android:id="@+id/radbtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="25%" />
+            android:text="25%"
+            android:onClick="onRadioButtonClicked3"/>
+        />
 
         <RadioButton
             android:id="@+id/radbtn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="60%" />
+            android:text="60%"
+            android:onClick="onRadioButtonClicked3"/>
+        />
     </RadioGroup>
 
     <Button

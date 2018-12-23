@@ -9,4 +9,11 @@
     <string name="question4">Q4)Three boys shared some oranges.The first received 1/3 of the oranges
     and the second received 2/3 of the remainder .If the third boy received the remaining 12 oranges,
     how many oranges did they share</string>
+    <string name="question5">Q5)Which ofthe following groups fall into the Civil Service:</string>
+    <string name="question6">Q6)The most senior class of the Nigerian Civil Service is:</string>
+    <string name="question7">Q7)The recruitment of appointment of the permanent secretary is one of the duties of :</string>
+    <string name="extra"><i>choose the word that best complete each of the following sentences from Q8-Q10</i></string>
+    <string name="question8">Q8)Please,let me .........you in your car to the railway stations</string>
+    <string name="question9">Q9)The..........came here last week </string>
+    <string name="question10">Q10)The activities marking the golden jubilee celebration were.........with a party</string>
 </resources>

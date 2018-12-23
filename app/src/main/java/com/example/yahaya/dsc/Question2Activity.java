@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Question2Activity extends AppCompatActivity {
+    static int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +20,13 @@ public class Question2Activity extends AppCompatActivity {
         String string2=getString(R.string.question2);
         Q_2.setText(string2);
         Intent intent=getIntent();
+        score=intent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
         Button nextbtn2=(Button)findViewById(R.id.button2);
         nextbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gotoq_3=new Intent(Question2Activity.this,Question3Activity.class);
+                gotoq_3.putExtra("com.example.yahaya.dsc.Scorekey",score);
                 startActivity(gotoq_3);
             }
         });
@@ -31,8 +34,7 @@ public class Question2Activity extends AppCompatActivity {
         prevbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2=new Intent(Question2Activity.this,MainActivity.class);
-                startActivity(intent2);
+                finish();
             }
         });
     }
@@ -41,11 +43,11 @@ public class Question2Activity extends AppCompatActivity {
         switch(view.getId()){
             case R.id.option1:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"CORRECT",Toast.LENGTH_SHORT).show();
+
                 }
             case R.id.option2:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+                score++;
                 }
             case R.id.option3:
                 if(checked){

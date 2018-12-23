@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE="com.example.yahaya.dsc";
+    static int score=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         TextView Q_1=(TextView)findViewById(R.id.textView);
         String string=getString(R.string.question1);
         Q_1.setText(string);
-        Intent getintent=getIntent();
+        score=0;
+
     }
 
     public void onRadioButtonClicked(View view){
@@ -26,25 +28,26 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()){
             case R.id.option1:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"CORRECT",Toast.LENGTH_SHORT).show();
+
                 }
             case R.id.option2:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+                    score++;
                 }
             case R.id.option3:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+
                 }
             case R.id.option4:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+
                 }
         }
 
     }
     public void messenger(View view){
      Intent intent=new Intent(MainActivity.this,Question2Activity.class);
+     intent.putExtra("com.example.yahaya.dsc.Scorekey",score);
      startActivity(intent);
     }
 }
