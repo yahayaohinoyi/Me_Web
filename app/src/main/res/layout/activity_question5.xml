@@ -44,25 +44,29 @@
             android:id="@+id/option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked5"/>
+            android:onClick="onRadioButtonClicked5"
+            android:text="The Police,the army,and the air force" />
 
         <RadioButton
             android:id="@+id/option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked5"/>
+            android:onClick="onRadioButtonClicked5"
+            android:text="Employees of NEPA,NNPC and NRC" />
 
         <RadioButton
             android:id="@+id/option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked5"/>
+            android:onClick="onRadioButtonClicked5"
+            android:text="Employees of ministries of finance,education and treansportation" />
 
         <RadioButton
             android:id="@+id/option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked5"/>
+            android:onClick="onRadioButtonClicked5"
+            android:text="All of the @android:string/status_bar_notification_info_overflow" />
     </RadioGroup>
 
     <Button

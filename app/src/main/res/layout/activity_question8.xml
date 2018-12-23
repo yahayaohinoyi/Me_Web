@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question6Activity">
+    tools:context=".Question8Activity">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,10 +20,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintVertical_bias="0.016" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -39,41 +38,41 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452">
+        app:layout_constraintVertical_bias="0.449">
 
         <RadioButton
             android:id="@+id/option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="higher technical class"
-            android:onClick="onRadioButtonClicked6"/>
+            android:text="go with"
+            android:onClick="onRadioButtonClicked8"/>
 
         <RadioButton
             android:id="@+id/option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="professional class"
-            android:onClick="onRadioButtonClicked6"/>
+            android:text="move with"
+            android:onClick="onRadioButtonClicked8"/>
 
         <RadioButton
             android:id="@+id/option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="technical class"
-            android:onClick="onRadioButtonClicked6"/>
+            android:text="follow"
+            android:onClick="onRadioButtonClicked8"/>
 
         <RadioButton
             android:id="@+id/option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sub-clerical and manipulative class"
-            android:onClick="onRadioButtonClicked6"/>
+            android:text="ride"
+            android:onClick="onRadioButtonClicked8"/>
     </RadioGroup>
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button14"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -86,10 +85,10 @@
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.688" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,8 +100,8 @@
         android:text="NEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.686" />
 </android.support.constraint.ConstraintLayout>

@@ -28,6 +28,15 @@ static int score;
 
             }
         });
+        Button nextbtn=(Button)findViewById(R.id.button6);
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Question4Activity.this,Question5Activity.class);
+                intent.putExtra("com.example.yahaya.dsc.Scorekey",score);
+                startActivity(intent);
+            }
+        });
     }
     public void onRadioButtonClicked4(View view){
         boolean checked=((RadioButton) view).isChecked();

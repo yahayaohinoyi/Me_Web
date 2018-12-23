@@ -7,42 +7,47 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class Question5Activity extends AppCompatActivity {
-static int score;
+public class Question10Activity extends AppCompatActivity {
+    static int score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question5);
-        Intent getintent=getIntent();
-        score=getintent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
-        TextView tv=(TextView)findViewById(R.id.textView5);
-        String Q_5=getString(R.string.question5);
-        tv.setText(Q_5);
-        Button prevbtn=(Button)findViewById(R.id.button8);
+        setContentView(R.layout.activity_question10);
+        TextView tv=(TextView)findViewById(R.id.textView10);
+        String Q_10=getString(R.string.question10);
+        tv.setText(Q_10);
+        Button prevbtn=(Button)findViewById(R.id.button18);
         prevbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-        Button nextbtn=(Button)findViewById(R.id.button9);
-        nextbtn.setOnClickListener(new View.OnClickListener() {
+        Button submitbtn=(Button)findViewById(R.id.button19);
+        submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-Intent intent=new Intent(Question5Activity.this,Question6Activity.class);
-intent.putExtra("com.example.yahaya.dsc.Scorekey",score);
-startActivity(intent);
+                Toast mytoast=Toast.makeText(getApplicationContext(),R.string.MESSAGE  + score,Toast.LENGTH_SHORT);
+                mytoast.show();
             }
         });
-
+        Button resetbtn=(Button)findViewById(R.id.button20);
+        resetbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Question10Activity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
-    public void onRadioButtonClicked5(View view){
+    public void onRadioButtonClicked10(View view){
         boolean checked=((RadioButton) view).isChecked();
         switch(view.getId()){
             case R.id.option1:
                 if(checked){
-
+                score++;
                 }
             case R.id.option2:
                 if(checked){
@@ -50,7 +55,7 @@ startActivity(intent);
                 }
             case R.id.option3:
                 if(checked){
-                    score++;
+
                 }
             case R.id.option4:
                 if(checked){
