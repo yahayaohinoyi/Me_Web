@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         String string=getString(R.string.question1);
         Q_1.setText(string);
         score=0;
-
     }
 
     public void onRadioButtonClicked(View view){

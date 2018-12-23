@@ -15,6 +15,8 @@ public class Question10Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question10);
+        Intent intent=getIntent();
+        score=intent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
         TextView tv=(TextView)findViewById(R.id.textView10);
         String Q_10=getString(R.string.question10);
         tv.setText(Q_10);
@@ -29,7 +31,7 @@ public class Question10Activity extends AppCompatActivity {
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast mytoast=Toast.makeText(getApplicationContext(),R.string.MESSAGE  + score,Toast.LENGTH_SHORT);
+                Toast mytoast=Toast.makeText(getApplicationContext(),"YOUR SCORE IS "+score*10+"%",Toast.LENGTH_SHORT);
                 mytoast.show();
             }
         });

@@ -15,7 +15,7 @@ static int score;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question8);
         Intent getintent=getIntent();
-        score=getintent.getIntExtra("com.example.yahaya.dsc.Scorekey",score);
+        score=getintent.getIntExtra("com.example.yahaya.dsc.Scorekey",0);
         TextView tv=(TextView)findViewById(R.id.textView8);
         String Q_8=getString(R.string.question8);
         tv.setText(Q_8);

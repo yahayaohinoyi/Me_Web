@@ -51,11 +51,11 @@ public class Question2Activity extends AppCompatActivity {
                 }
             case R.id.option3:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+
                 }
             case R.id.option4:
                 if(checked){
-                    Toast.makeText(getApplicationContext(),"WRONG",Toast.LENGTH_SHORT).show();
+
                 }
         }
 
